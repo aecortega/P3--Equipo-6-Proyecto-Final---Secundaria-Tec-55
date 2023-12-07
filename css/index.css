@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/*h1,h4..*/
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+
+/*text*/
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: #ff9800;
+  background: #fefefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 64rem;
+  min-width: 18.75rem; /* 300px / 16 */
+  margin: 0 auto;
+  padding: 1em;
+}
+
+h1,
+h4 {
+  font-family: "Cinzel", serif;
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 1em 0;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 4px double rgb(12, 12, 12);
+}
+
+h1:first-line {
+  font-size: 3rem;
+  letter-spacing: 0 0.5em;
+  /*text-transform:uppercase;*/
+  font-variant: small-caps;
+}
+
+/* PRINCIPAL */
+
+.btn-tramitar-ficha {
+  background-color: #ff6600;
+}
+
+.btn-buscar {
+  background-color: #ff6600;
+}
+
+.principal main p:first-child,
+.principal aside p:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+}
+.btn-primary {
+  background-color: #ff9800;
+  border-color: #ff9800;
+}
+
+
+/* Cambio de color al pasar el mouse sobre el botón */
+.btn-primary:hover {
+  background-color: #f8ff2cd5; /* Cambiar a un tono más oscuro de naranja cuando el mouse está encima */
+  border-color: #f8ff2cd5; /* Cambiar color del borde a un tono más oscuro de naranja cuando el mouse está encima */
+}
+h2,
+h3 {
+  text-align: left; /* Alineación del texto a la izquierda */
+}
+/* main */
+
+.principal main {
+  margin-top: 2em;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+li:before {
+  content: "\025b8";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+/* aside */
+
+.principal aside {
+  margin-top: 2em;
+  font-style: italic;
+  color: #555;
+  font-family: serif;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 0 1em 0;
+}
+
+.principal aside p:first-line {
+  font-style: normal;
+  /*text-transform:uppercase;*/
+  font-variant: small-caps;
+  font-size: 120%;
+  line-height: 120%;
+}
+
+/* FOOTER */
+
+footer {
+  font-style: italic;
+  color: #555;
+  font-family: serif;
+  margin-bottom: 2em;
+}
+
+footer a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #555;
+}
+
+footer a:hover {
+  color: rgb(105, 105, 105);
+}
+
+@media screen and (min-width: 40em) {
+  h1:first-line {
+    letter-spacing: 0.5em;
+  }
+  h1 span {
+    padding-left: 0.5em;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  .principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .principal main {
+    width: 75%;
+    padding: 0 0 0 2em;
+  }
+  .principal aside {
+    width: 25%;
+    border: none;
+    border-right: 1px solid #d9d9d9;
+    padding: 0 2em 0 0;
+    text-align: right;
+  }
+}

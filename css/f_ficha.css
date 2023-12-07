@@ -1,0 +1,116 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ejemplo de prefijo para la propiedad 'display' */
+.element {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Estilo personalizado */
+body {
+  background-color: #fff3e6;
+  /* Color de fondo amarillo claro */
+}
+
+h2 {
+  color: #ff6600;
+  /* Color naranja */
+}
+
+label {
+  color: #ff6600;
+  /* Color naranja */
+}
+
+/* Color de borde y texto de los campos de entrada */
+.form-control {
+  border-color: #ffcc99;
+  /* Borde naranja claro */
+  color: #ff6600;
+  /* Texto naranja */
+}
+
+/* Color del botón Enviar */
+.btn-primary {
+  background-color: #ff6600;
+  /* Fondo naranja */
+  border-color: #ff6600;
+  /* Borde naranja */
+}
+
+/* Color del botón Enviar al pasar el ratón por encima */
+.btn-primary:hover {
+  background-color: #ff8533;
+  /* Fondo naranja claro */
+  border-color: #ff8533;
+  /* Borde naranja claro */
+}
+
+.custom-legend {
+  color: #ff6600;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+label {
+  color: #ff6600;
+  /* Color naranja para las etiquetas */
+}
+
+/* Color de borde y texto de los campos de entrada */
+.form-control {
+  border-color: #ffcc99;
+  /* Borde naranja claro */
+  color: #ff6600;
+  /* Texto naranja */
+}
+
+/* Estilos para el área de carga de archivos */
+.custom-file {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.custom-file-input {
+  position: absolute;
+  width: auto;
+  /* Ancho automático */
+  overflow: hidden;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-file-label {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background-color: #ff6600;
+  /* Color naranja para el botón de selección de archivos */
+  border-color: #ff6600;
+  /* Borde naranja */
+  color: #fff;
+  /* Color del texto */
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.custom-file-label::after {
+  content: "archivo";
+  /* Texto del botón personalizado */
+}
